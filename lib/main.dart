@@ -37,15 +37,12 @@ class MyProfile extends StatelessWidget {
       ),
 
 
-
       body: Container(
         color: Colors.purple[50],
         child: Center(
-          // Center widget to center content horizontally and vertically
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.center,
-            // Center horizontally within the Column
             children: [
               SizedBox(height: 8),
               CircleAvatar(
@@ -79,8 +76,7 @@ class MyProfile extends StatelessWidget {
                   color: Colors.purple[900],
                 ),
               ),
-              Text(
-                  'If you submit code directly copy from chatgpt then mark will 0'),
+              Text('If you submit code directly copy from chatgpt then mark will 0'),
             ],
           ),
         ),
