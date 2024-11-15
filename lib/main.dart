@@ -10,29 +10,33 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Need Blood'),
+          backgroundColor: Colors.red,
+          title: Text(
+            'Need Blood',
+            style: TextStyle(color: Colors.white),
+          ),
           centerTitle: true,
           actions: [
             IconButton(
               icon: Icon(Icons.add),
+              color: Colors.white,
               onPressed: () {
                 // Add button action here
               },
             ),
           ],
-          backgroundColor: Colors.red,
         ),
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               CircleAvatar(
-                radius: 50,
+                radius: 80,
                 backgroundColor: Colors.grey,
                 child: Icon(
                   Icons.bloodtype,
                   color: Colors.red,
-                  size: 50,
+                  size: 80,
                 ),
               ),
               SizedBox(height: 10),
